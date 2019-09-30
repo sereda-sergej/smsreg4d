@@ -36,7 +36,42 @@ type
       end;
     end;
   public type
-    Exc = class
+    Services = class sealed
+    const
+      Aol        = 'aol';
+      Gmail      = 'gmail';
+      Facebook   = 'facebook';
+      Mailru     = 'mailru';
+      Vk         = 'vk';
+      Classmates = 'classmates';
+      Twitter    = 'twitter';
+      Mamba      = 'mamba';
+      Uber       = 'uber';
+      Telegram   = 'telegram';
+      Badoo      = 'badoo';
+      Drugvokrug = 'drugvokrug';
+      Avito      = 'avito';
+      Olx        = 'olx';
+      Steam      = 'steam';
+      Fotostrana = 'fotostrana';
+      Microsoft  = 'microsoft';
+      Viber      = 'viber';
+      WhatsApp   = 'whatsapp';
+      WeChat     = 'WeChat';
+      SeoSprint  = 'seosprint';
+      Instagram  = 'instagram';
+      Yahoo      = 'yahoo';
+      LineMe     = 'lineme';
+      KakaoTalk  = 'kakaotalk';
+      Meetme     = 'meetme';
+      Tinder     = 'tinder';
+      Nimses     = 'nimses';
+      Youla      = 'youla';
+      Pyaterka   = '5ka';
+      Other      = 'other';
+    end;
+
+    Exc = class sealed
     type
       Base = class abstract(Exception)
       private

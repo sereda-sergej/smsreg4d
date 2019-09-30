@@ -14,7 +14,7 @@ var
 begin
   client := SmsReg.NewClient('api_key', TSynapseSmsReg.Create());
 
-  tzid := client.GetNumber('instagram');
+  tzid := client.GetNumber(SmsReg.Services.Instagram);
   client.SetReady(tzid);
 
   //...

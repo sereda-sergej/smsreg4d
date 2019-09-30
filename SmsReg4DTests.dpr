@@ -39,7 +39,7 @@ var
 begin
   client := SmsReg.NewClient('4zi3xxmmwbmwysvg197a43klddii315o', THttpClientProxy.Create(TSmsRegSynapse.Create()));
   try
-    Writeln(client.GetNumber('vk'));
+    Writeln(client.GetNumber(SmsReg.Services.Vk));
   except
     on E: SmsReg.Exc.ResponseError do
       Writeln(E.Message, ' url: ', E.Url, ', response: ', E.Response);
